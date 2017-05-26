@@ -118,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
+
+<p>Finally, run your project in an emulator. </p>
 <br>
 <br>
 <img src = "img/screenshot.png" width="400" alt="main">

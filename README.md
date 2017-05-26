@@ -1,4 +1,10 @@
 
+<h1>ListView</h1>
+
+<p>Today, we're going to learn about a very powerful tool in Android: the ListView.  You've probably seen this before; whenever you scroll down a long list of items on an Android phone, you're using a ListView.  Below is an example of a weather app using a ListView.</p>
+
+<img src = "img/weather.png" alt="main">
+
 <p>First, drag a ListView from the Palette on the side onto your view.</p>
 
 <img src = "img/main.png" alt="main">
@@ -76,5 +82,8 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-<p></p>
-<img src = "img/thumbsup.png" alt="main">
+<br>
+<br>
+<img src = "img/screenshot.png" width="400" alt="main">
+<p>Success!</p>
+<img src = "img/thumbsup.png" width="400" alt="main">

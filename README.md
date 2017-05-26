@@ -22,6 +22,7 @@ ListView friendsListView = (ListView)findViewById(R.id.friendsListView);
 final ArrayList<String> myFriends = new ArrayList<String>(asList("John", "Paul", "George", "Ringo"));
 ```
 <p>Then, create an ArrayAdapter that will specify the context (this), type of list item (simple_list_item_1), and ArrayList we want to display in the ListView.  Use "setAdapter" to set our ArrayAdapter as the adapter of the ListView. </p>
+
 ```
 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, myFriends);
 friendsListView.setAdapter(arrayAdapter);
@@ -36,7 +37,7 @@ friendsListView.setAdapter(arrayAdapter);
 friendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), "Hello " + myFriends.get(position), Toast.LENGTH_LONG).show();
+              Toast.makeText(getApplicationContext(), "Hello " + myFriends.get(position), Toast.LENGTH_LONG).show();
             }
         });
 ```

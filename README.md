@@ -14,13 +14,16 @@
 
 
 <p>In the code below, we're going to initialize our ListView and use findViewById to connect it to the ListView we created in our layout builder. </p>
+
 ```
 ListView friendsListView = (ListView)findViewById(R.id.friendsListView);
 ```
 <p>Next, create an ArrayList of Strings that we will display in the ListView.</p>
+
 ```
 final ArrayList<String> myFriends = new ArrayList<String>(asList("John", "Paul", "George", "Ringo"));
 ```
+
 <p>Then, create an ArrayAdapter that will specify the context (this), type of list item (simple_list_item_1), and ArrayList we want to display in the ListView.  Use "setAdapter" to set our ArrayAdapter as the adapter of the ListView. </p>
 
 ```
@@ -33,6 +36,7 @@ friendsListView.setAdapter(arrayAdapter);
 <p>Next, we're going to set a method for clicking on each individual cell in the ListView.  </p>
 
 <p>The Toast method displays text in a box near the bottom of the screen.  You can specify how long it will appear (Toast.LENGTH_LONG) and the text it will show ("Hello " + myFriends.get(position)).</p>
+
 ```
 friendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -43,6 +47,7 @@ friendsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 ```
 
 <p>The code below is the final code for MainActivity.class:</p>
+
 ```
 public class MainActivity extends AppCompatActivity {
 
@@ -70,5 +75,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+
 <p></p>
 <img src = "img/thumbsup.png" alt="main">
